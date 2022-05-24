@@ -12,15 +12,12 @@ final getDataFromApi =
 class ListViewModel extends ChangeNotifier {
   int counterNumber = 1;
 
-  //
   void increaseCounterNumber(Products product) {
-    print("ana fel increase ${product.counter}");
     product.counter = product.counter! + 1;
     notifyListeners();
   }
 
   void decreaseCounterNumber(Products product) {
-    print("ana fel decrease ${product.counter}");
     product.counter = product.counter! - 1;
     notifyListeners();
   }

@@ -77,7 +77,7 @@ class ProductView extends ConsumerWidget {
                                               radius: 22,
                                               child: Text(
                                                 "${productItems.discountPercentage.toString() + "%"}",
-                                                style: TextStyle(
+                                                style:  TextStyle(
                                                     fontSize: 12,
                                                     fontWeight: FontWeight.bold,
                                                     color: Colors.white),
@@ -133,9 +133,6 @@ class ProductView extends ConsumerWidget {
                                                                   ),
                                                         ),
                                                       ),
-                                                      // const SizedBox(
-                                                      //   width: 5,
-                                                      // ),
                                                       _buildRatingStars(
                                                           productItems.rating!
                                                               .toInt()),

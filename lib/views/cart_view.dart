@@ -42,12 +42,6 @@ class CartScreen extends ConsumerWidget {
                     width: screenWidth,
                     child: ElevatedButton.icon(
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const CheckoutScreen(),
-                        //   ),
-                        // );
                       },
                       label: const Icon(
                         FeatherIcons.shoppingCart,
@@ -55,7 +49,7 @@ class CartScreen extends ConsumerWidget {
                         size: 22,
                       ),
                       icon: Text(
-                        "الدفع",
+                        "Check Out",
                         style: Theme.of(context).textTheme.bodyText1!.copyWith(
                             fontSize: 20,
                             fontWeight: FontWeight.w800,
@@ -201,7 +195,6 @@ class CartScreen extends ConsumerWidget {
                                                   width: screenWidth * .33,
                                                 ),
                                                 Container(
-                                                  // width: 60,
                                                   padding: const EdgeInsets
                                                           .symmetric(
                                                       horizontal: 10),
